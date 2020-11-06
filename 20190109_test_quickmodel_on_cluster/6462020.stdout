@@ -1,0 +1,68 @@
+Sender: LSF System <lsfadmin@lt01>
+Subject: Job 6462020: <test_quickmodel> in cluster <lila> Done
+
+Job <test_quickmodel> was submitted from host <lilac> by user <misik> in cluster <lila> at Wed Jan  9 11:46:08 2019
+Job was executed on host(s) <lt01>, in queue <cpuqueue>, as user <misik> in cluster <lila> at Wed Jan  9 11:46:08 2019
+</home/misik> was used as the home directory.
+</home/misik/EXPERIMENTS/20190109_test_quickmodel_on_cluster> was used as the working directory.
+Started at Wed Jan  9 11:46:08 2019
+Terminated at Wed Jan  9 11:46:21 2019
+Results reported at Wed Jan  9 11:46:21 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J test_quickmodel
+#BSUB -n 1
+#BSUB -R span[ptile=1]
+#BSUB -R rusage[mem=8]
+#BSUB -W 02:00
+#BSUB -o %J.stdout
+#BSUB -eo %J.stderr
+
+# make sure job's submission CWD path can be accessed on the job's execution host 
+cd $LS_SUBCWD
+
+# Activate the environment where Assaytools is installed
+source activate assaytools_af411f0
+
+# Export current conda environment requirements
+conda list --export > requirements.txt
+
+# Run my program
+echo "Started running Assaytools...\n"
+quickmodel --inputs 'inputs' --type 'spectra' --nsamples 1000
+echo "\nDone.\n"
+
+# For full analysis run with 100000 samples
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   5.79 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     8.00 GB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                77
+    Run time :                                   12 sec.
+    Turnaround time :                            13 sec.
+
+The output (if any) follows:
+
+Started running Assaytools...\n
+\nDone.\n
+
+
+PS:
+
+Read file <6462020.stderr> for stderr output of this job.
+

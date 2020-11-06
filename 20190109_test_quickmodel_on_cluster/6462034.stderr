@@ -1,0 +1,8 @@
+/home/misik/opt/miniconda3/envs/assaytools_af411f0/lib/python3.6/site-packages/pymc/MCMC.py:81: UserWarning: Instantiating a Model object directly is deprecated. We recommend passing variables directly to the Model subclass.
+  warnings.warn(message)
+/home/misik/opt/miniconda3/envs/assaytools_af411f0/lib/python3.6/site-packages/pymc/MCMC.py:81: UserWarning: Instantiating a Model object directly is deprecated. We recommend passing variables directly to the Model subclass.
+  warnings.warn(message)
+/home/misik/opt/miniconda3/envs/assaytools_af411f0/lib/python3.6/site-packages/pymc/MCMC.py:81: UserWarning: Instantiating a Model object directly is deprecated. We recommend passing variables directly to the Model subclass.
+  warnings.warn(message)
+/home/misik/opt/miniconda3/envs/assaytools_af411f0/lib/python3.6/site-packages/pymc/MCMC.py:81: UserWarning: Instantiating a Model object directly is deprecated. We recommend passing variables directly to the Model subclass.
+  warnings.warn(message)

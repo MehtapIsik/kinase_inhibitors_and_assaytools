@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/misik/opt/miniconda3/envs/assaytools_af411f0/bin/quickmodel", line 11, in <module>
+    load_entry_point('assaytools==0.3.1', 'console_scripts', 'quickmodel')()
+  File "/home/misik/opt/miniconda3/envs/assaytools_af411f0/lib/python3.6/site-packages/pkg_resources/__init__.py", line 487, in load_entry_point
+    return get_distribution(dist).load_entry_point(group, name)
+  File "/home/misik/opt/miniconda3/envs/assaytools_af411f0/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2728, in load_entry_point
+    return ep.load()
+  File "/home/misik/opt/miniconda3/envs/assaytools_af411f0/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2346, in load
+    return self.resolve()
+  File "/home/misik/opt/miniconda3/envs/assaytools_af411f0/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2352, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/home/misik/opt/miniconda3/envs/assaytools_af411f0/lib/python3.6/site-packages/assaytools-0.3.1-py3.6.egg/assaytools/__init__.py", line 4, in <module>
+    from assaytools import platereader
+  File "/home/misik/opt/miniconda3/envs/assaytools_af411f0/lib/python3.6/site-packages/assaytools-0.3.1-py3.6.egg/assaytools/platereader.py", line 15, in <module>
+    from lxml import etree
+ModuleNotFoundError: No module named 'lxml'
